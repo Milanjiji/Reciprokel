@@ -109,3 +109,92 @@ header{
     color: #2667FF;
     margin-right: 10px;
 }
+.hero-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.hero-b-box{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.hero-b-box1-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    padding-bottom: -40px;
+}
+.launching-before{
+    font-size: 32px;
+    width: 50%;
+    color: white;
+}
+.launching{
+    font-size: 12px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: fit-content;
+    color: #2667FF;
+}
+
+.hero-b-box1{
+    border-radius: 20px;
+    background-image: url('./assets/img/Rectangle\ 01.png');
+    background-size: 40vw 600px;
+    background-position-x: -5vw;
+}
+.hero-b-box2{
+    background-color: #F4F4F6;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.hero-b-box2-title{
+    font-size: 32px;
+}
+.hero-b-box2-sub{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-b-box3-box1{
+    background-color: #F4F4F6;
+    border-radius: 20px;
+    padding:30px 35px;
+    max-height: 40%;
+}
+.hero-b-box3-box2{
+    background-color: #F4F4F6;
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+.hero-b-box3{
+    width: 30vw;
+}
+.hero-b-box3-box1-head{
+    font-size: 32px;
+}
+.hero-b-box3-box1-sub{
+    font-size: 12px;
+}
+.hero-b-box3-box3{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-top-btn1 a{
+    font-size: 12px;
+}
+.hero-top-btn2 a{
+    font-size: 12px;
+}
