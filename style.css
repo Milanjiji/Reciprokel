@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+    letter-spacing: -0.18px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 51px;
+    margin-right: 51px;
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-left img{
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.header-center ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-center ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.header-center ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header-right p{
+    font-size: 14px;
+}
+.header-right p a{
+    color: black;
+    text-decoration: none;
+}
+.hero{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-top p{
+    text-align: center;
+}
+.hero-top-heading{
+    font-size: 56px;
+    font-weight: 400;
+}
+.hero-top-subheading{
+    margin-top: 9px;
+    font-weight: 300;
+}
+.hero-top-buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+.hero-top-btn a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero-top-btn img{
+    width: 14px;
+    height: 14px;
+}
+.hero-top-btn1{
+    background-color: #2667FF;
+}
+.hero-top-btn1 a{
+    color: white;
+    margin-right: 10px;
+}
+.hero-top-btn2{
+    background-color: white;
+    border: 1px #2667FF solid;
+}
+.hero-top-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
+}
