@@ -80,7 +80,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 16px;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 10px;
@@ -197,4 +197,123 @@ header{
 }
 .hero-top-btn2 a{
     font-size: 12px;
+}
+.quote{
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote-head{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+.quote-para{
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 250;
+    max-width: 60vw;
+    margin-top: 20px;
+}
+.map{
+    font-size: 20px;
+    font-weight: 200;
+}
+.back-map-line{
+    position:absolute;
+    z-index: -1;
+    width: 1px;
+    height: 70vw;
+    background-color: #2667FF;
+    left: 50vw;
+    top: 110vh;
+}
+.map-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.map-box{
+    display: flex;
+}
+.map-box-ball{
+    background-color: #2667FF;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 10px white solid;
+}
+.map-box-content{
+    max-width: 40vw;
+    border-radius: 20px;
+    padding: 20px 30px;
+    border:1px #2667FF solid;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+.map-box-content ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.map-box-content-head{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.map-box-1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.3vw;
+}
+.map-box-1 .map-box-content{
+    margin-left: 8px;
+}
+.map-box-2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 48.3vw;
+}
+.map-box-2 .map-box-content{
+    margin-right: 8px;
+}
+.map-box-3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.3vw;
+}
+.map-box-3 .map-box-content{
+    margin-left: 8px;
+}
+.map-box-4{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 48.3vw;
+}
+.map-box-4 .map-box-content{
+    margin-right: 8px;
+}
+.map-box-5{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.3vw;
+}
+.map-box-5 .map-box-content{
+    margin-left: 8px;
+}
+.map-box-6{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 48.3vw;
+}
+.map-box-6 .map-box-content{
+    margin-right: 8px;
+}
+.map-box-7{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.3vw;
+}
+.map-box-7 .map-box-content{
+    margin-left: 8px;
 }
