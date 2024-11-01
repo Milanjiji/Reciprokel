@@ -76,40 +76,52 @@ header{
     justify-content: center;
     align-items: center;
 }
-.hero-top-btn{
+
+.hero-top-btn img{
+    width: 14px;
+    height: 14px;
+}
+
+.hero-top-btn1 a{
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero-top-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero-top-btn1{
+    width: 200px;
+    background-color: #2667FF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 10px;
     border-radius: 30px;
-    width: 200px;
-}
-.hero-top-btn a{
-    text-decoration: none;
-    font-size: 14px;
-}
-.hero-top-btn img{
-    width: 14px;
-    height: 14px;
-}
-.hero-top-btn1{
-    background-color: #2667FF;
-}
-.hero-top-btn1 a{
-    color: white;
-    margin-right: 10px;
 }
 .hero-top-btn2{
+    width: 200px;
     background-color: white;
     border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
-.hero-top-btn2 a{
-    color: #2667FF;
-    margin-right: 10px;
-}
+
 .hero-bottom{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -199,20 +211,45 @@ header{
     display: flex;
     flex-direction: row;
 }
-.hero-top-btn{
-    width: 50%;
+.hero-box3-box-3-btn1{
+    width: 10.5vw;
+    background-color: #2667FF;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
-.hero-top-btn1{
-    width: 200px;
-}
-.hero-top-btn2{
-    width: 200px;
-}
-.hero-top-btn1 a{
+.hero-box3-box-3-btn1 a{
+    color: white;
+    margin-right: 10px;
     font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
 }
-.hero-top-btn2 a{
+.hero-box3-box-3-btn2{
+    width: 10.5vw;
+    background-color: white;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.hero-box3-box-3-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
     font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
 }
 .quote{
     margin: 40px 40px;
@@ -288,7 +325,7 @@ header{
 .map-box-2{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 48.3vw;
+    margin-right: 47.3vw;
 }
 .map-box-2 .map-box-content{
     margin-right: 8px;
@@ -304,7 +341,7 @@ header{
 .map-box-4{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 48.3vw;
+    margin-right: 47.3vw;
 }
 .map-box-4 .map-box-content{
     margin-right: 8px;
@@ -320,7 +357,7 @@ header{
 .map-box-6{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 48.3vw;
+    margin-right: 47.3vw;
 }
 .map-box-6 .map-box-content{
     margin-right: 8px;
@@ -347,14 +384,52 @@ header{
     margin-bottom: 20px;
 }
 .contact-s-1-btn{
-    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-.contact-s-1-btn{
+.contact-s-1-btn1{
+    width: 15vw;
+    background-color: #2667FF;
+    border: 1px #2667FF solid;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
+.contact-s-1-btn1 a{
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.contact-s-1-btn2{
+    width: 15vw;
+    background-color: white;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.contact-s-1-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .contact-s-2{
     width: 95vw;
     margin-top: 50px;
