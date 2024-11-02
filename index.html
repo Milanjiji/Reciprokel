@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/res/index.css">
+    <script src="https://kit.fontawesome.com/45e114222a.js" crossorigin="anonymous"></script>
     <title>Reciprokel</title>
 </head>
 <body>
     <header id="header" >
+        <div id="navbar-menu" class="navbar-menu">
+            <button id="navbar-open" ><i   class="fa-solid fa-bars"></i></button>
+            <button id="navbar-close" ><i  class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="navbar-content" class="navbar-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="header-left">
             <img src="./assets/img/header-logo.jpeg" alt="">
             <p style="font-family: 'Readex Pro', sans-serif;" >Reciprokel</p>
@@ -188,6 +201,22 @@
     var totalheight = height1+height2+height3;
     back_line.style.top = totalheight + 220 + "px"
     back_line.style.height = map-100 + 'px'
+
+    document.getElementById('navbar-menu').addEventListener('click',function () {
+        var navbar_content = document.getElementById('navbar-content')
+        var navbar_button_open = document.getElementById('navbar-open')
+        var navbar_button_close = document.getElementById('navbar-close')
+        if(navbar_content.offsetLeft < 400){
+            navbar_content.style.right = '-50vw'
+            navbar_button_open.style.opacity = 1
+            navbar_button_close.style.opacity = 0
+        }else{
+            navbar_content.style.right = '0vw'
+            navbar_button_open.style.opacity = 0
+            navbar_button_close.style.opacity = 1
+        }
+        
+    } )
     
 </script>
 <script type="module">

@@ -19,6 +19,12 @@ header{
     margin-left: 51px;
     margin-right: 51px;
 }
+.navbar-menu{
+    display: none;
+}
+.navbar-content{
+    display: none;
+}
 .header-left{
     display: flex;
     justify-content: center;

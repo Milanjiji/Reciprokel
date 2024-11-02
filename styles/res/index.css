@@ -13,6 +13,61 @@ header{
     margin-top: 20px;
     margin-left: 10px;
 }
+.navbar-menu{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 1;
+}
+#navbar-open{
+    background-color: #2667ff00;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    opacity: 1;
+    margin-right: -30px;
+}
+#navbar-close{
+    background-color: #2667ff00;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transition: 0.3s;
+    color: white;
+}
+#navbar-close i{
+    color: white;
+}
+.navbar-menu i{
+    font-size: 30px;
+}
+.navbar-content{
+    display: flex;
+    position: fixed;
+    right: -50vw;
+    top: 0px;
+    background-color: #2667FF;
+    height: 100vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.navbar-content ul{
+    margin-top: -60vh;
+}
+.navbar-content ul li{
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+.navbar-content ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
 .header-left{
     display: flex;
     justify-content: left;
