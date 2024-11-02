@@ -482,6 +482,7 @@ header{
     align-items: center;
     margin-top: 50px;
     border-radius: 20px;
+    transition: 0.3s;
 }
 .contact-s-2-submit button{
     background-color: rgba(255, 255, 255, 0);
@@ -489,6 +490,21 @@ header{
     border: none;
     margin-right:20px ;
 }
+.contact-s-2-submit-icon{
+    width: 30px;
+    height: 10px;
+    background-image: url('./assets/icons/Arrow\ 3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contact-s-2-submit:hover{
+    background-color: white;
+    border: 1px #2667FF solid;
+}
+.contact-s-2-submit:hover button{
+    color: #2667FF;
+}
+
 .contact-s-3{
     margin-top: 100px;
     display: flex;

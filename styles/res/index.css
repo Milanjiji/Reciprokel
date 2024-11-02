@@ -79,7 +79,10 @@ header{
     width: 50%;
 }
 .hero-b-box1{
-    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 600px 700px;
+    background-position-x: -33vw;
+    /* background-position-y: 100px; */
 }
 .hero-b-box2{
     background-color: #F4F4F6;
@@ -92,11 +95,11 @@ header{
 .hero-b-box3-box1{
     padding:30px 35px;
     height: 30%;
-    background-image: none;
 }
 .hero-b-box3-box2{
     margin-top: 20px;
-    background-image: none;
+    /* background-image: none;x */
+    background-position-y: -50px;
 }
 .hero-b-box3{
     width: 90vw;
