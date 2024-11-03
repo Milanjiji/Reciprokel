@@ -485,6 +485,10 @@ header{
     font-family: "Inter";
     font-size: 14px;
 }
+.contact-s-2-details-top input::placeholder{
+    color: black;
+    opacity: 1;
+}
 .contact-s-2-msg{
     border: none;
     border-bottom: 1px black solid ;

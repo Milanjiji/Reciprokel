@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/res/index.css">
     <script src="https://kit.fontawesome.com/45e114222a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <title>Reciprokel</title>
 </head>
 <body>
-    <header id="header" >
+    <header data-aos="fade-up" id="header" >
         <p id="alert" ></p>
         <div id="navbar-menu" class="navbar-menu">
             <button id="navbar-open" ><i   class="fa-solid fa-bars"></i></button>
@@ -39,7 +40,7 @@
             <p><a href="#">For Inverstors</a></p>
         </div>
     </header>
-    <section id="hero" class="hero">
+    <section data-aos="fade-up" id="hero" class="hero">
         <div class="hero-top">
             <p class="hero-top-heading">Revolutionizing Engagement  in Education and<br>Professional Growth.</p>
             <p class="hero-top-subheading" >Empowering learning, collaboration, and career growth for students and professionals.</p>
@@ -89,28 +90,28 @@
             </div>
         </div>
     </section>
-    <section id="quote" class="quote" >
+    <section data-aos="fade-up" id="quote" class="quote" >
         <p class="quote-head" >Our Vision</p>
         <p class="quote-para" >“To transform the future of education by providing intuitive, innovative, and scalable technology solutions that empower educational institutions to create more personalized, engaging, and efficient learning environments globally.”</p>
     </section>
     <section id="map" class="map" >
         <div id="map-back-line" class="back-map-line"></div>
         <p class="map-head" >Product Roadmap</p>
-        <div class="map-box map-box-1">
+        <div data-aos="fade-up" class="map-box map-box-1">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Ideation & Conceptualization</p>
                 <p class="map-box-content-para" >We started with extensive brainstorming and market research to develop a unique platform focused on revolutionizing education and professional growth. The concept has been refined to create a seamless experience for students and professionals.</p>
             </div>
         </div>
-        <div class="map-box map-box-2">
+        <div data-aos="fade-up" class="map-box map-box-2">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Initial Product Design</p>
                 <p class="map-box-content-para" >Our team has finalized the design phase, ensuring the platform is intuitive, user-friendly, and visually appealing, with a strong focus on enhancing user engagement and interaction.</p>
             </div>
         </div>
-        <div class="map-box map-box-3">
+        <div data-aos="fade-up" class="map-box map-box-3">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Core Feature Development (Phase 1)</p>
@@ -123,28 +124,28 @@
                 </ul>
             </div>
         </div>
-        <div class="map-box map-box-4">
+        <div data-aos="fade-up" class="map-box map-box-4">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Beta Testing & Feedback Collection</p>
                 <p class="map-box-content-para" >After completing the core features, we will invite a limited number of users to test the platform and provide feedback. This phase ensures the platform is optimized for real-world use and ready for a broader audience..</p>
             </div>
         </div>
-        <div class="map-box map-box-5">
+        <div data-aos="fade-up" class="map-box map-box-5">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Feature Expansion (Phase 2)</p>
                 <p class="map-box-content-para" >Once the product is launched, we will gradually roll out new features to enrich the platform, focusing on community engagement, career growth, and streamlined digital collaboration.</p>
             </div>
         </div>
-        <div class="map-box map-box-6">
+        <div data-aos="fade-up" class="map-box map-box-6">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Official Launch</p>
                 <p class="map-box-content-para" >Following successful beta testing and feedback incorporation, we will officially launch the platform on the App Store and Google Play, with a global rollout targeting educational institutions and professionals.</p>
             </div>
         </div>
-        <div class="map-box map-box-7">
+        <div data-aos="fade-up" class="map-box map-box-7">
             <div class="map-box-ball"></div>
             <div class="map-box-content">
                 <p class="map-box-content-head" >Continuous Updates & Scaling</p>
@@ -153,7 +154,7 @@
         </div>
     </section>
     <section class="contact" >
-        <div class="contact-s-1">
+        <div data-aos="fade-up" class="contact-s-1">
             <p>Partner with Us for Growth</p>
             <div  class="contact-s-1-btn">
                 <div  class="hero-top-btn hero-top-btn1 contact-s-1-btn1">
@@ -166,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-s-2">
+        <div data-aos="fade-up" class="contact-s-2">
             <p  >Get in touch, <br> We'd Love to Hear From You</p>
             <div  class="contact-s-2-details-top">
                 <input type="text" id="msg-name" placeholder="Name">
@@ -179,7 +180,7 @@
                 <div class="contact-s-2-submit-icon"></div>
             </div>
         </div>
-        <div class="contact-s-3">
+        <div data-aos="fade-up" class="contact-s-3">
             <a style="margin-left: 15vw;" href="#">LinkedIn</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
@@ -189,8 +190,12 @@
             <p>© 2024 Reciprokel. All rights reserved </p>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
+
 <script>
     var height1 = document.getElementById('header').offsetHeight
     var height2 = document.getElementById('hero').offsetHeight;
@@ -293,4 +298,5 @@
         
   
   </script>
+
 </html>
