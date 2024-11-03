@@ -3,7 +3,8 @@
 
 body{
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -176,7 +177,7 @@ header{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-left: 10px;
 }
 .hero-box3-box-3-btn1 a{
@@ -194,8 +195,9 @@ header{
 }
 
 .quote-para{
-    font-size: 24px;
+    font-size: 20px;
     max-width: 100vw;
+    margin-top: 10px;
 }
 .map{
     font-size: 20px;
@@ -341,5 +343,7 @@ header{
     text-decoration: none;
     font-size: 14px;
 }
-
+.contact-s-4 p{
+    font-size: 12px;
+}
 }

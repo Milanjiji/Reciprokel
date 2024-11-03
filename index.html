@@ -10,6 +10,7 @@
 </head>
 <body>
     <header id="header" >
+        <p id="alert" ></p>
         <div id="navbar-menu" class="navbar-menu">
             <button id="navbar-open" ><i   class="fa-solid fa-bars"></i></button>
             <button id="navbar-close" ><i  class="fa-solid fa-xmark"></i></button>
@@ -260,6 +261,7 @@
         var input_phone = document.getElementById("msg-phone").value
         var input_Msg = document.getElementById("msg-msg").value
         var submit = document.getElementById("submit-overlay")
+        var alert = document.getElementById('alert')
         console.log(input_name,input_email,input_Msg,input_phone);
         if(!input_email || !input_Msg){
         }else{
@@ -273,6 +275,14 @@
                 });
                 console.log("Document written with ID: ", docRef.id);
                 submit.style.opacity = 1;
+                alert.style.right = '50px'
+                alert.innerText = 'Message sent successfully'
+                setTimeout(()=>{
+                    alert.style.right = '-500px'
+                    setTimeout(()=>{
+                        alert.innerText = ''
+                    },1000)
+                },2000)
             } catch (e) {
                 console.error("Error adding document: ", e);
             }
