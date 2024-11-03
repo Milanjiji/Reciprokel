@@ -498,6 +498,10 @@ header{
     font-family: "Inter";
     font-size: 14px;
 }
+.contact-s-2-msg::placeholder{
+    color: black;
+    opacity: 1;
+}
 .contact-s-2-submit{
     background-color: #2667FF;
     padding: 10px 30px;
