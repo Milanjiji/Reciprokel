@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/res/index.css">
+    <script src="https://kit.fontawesome.com/45e114222a.js" crossorigin="anonymous"></script>
     <title>Reciprokel</title>
 </head>
 <body>
     <header id="header" >
+        <div id="navbar-menu" class="navbar-menu">
+            <button id="navbar-open" ><i   class="fa-solid fa-bars"></i></button>
+            <button id="navbar-close" ><i  class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="navbar-content" class="navbar-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="header-left">
             <img src="./assets/img/header-logo.jpeg" alt="">
             <p style="font-family: 'Readex Pro', sans-serif;" >Reciprokel</p>
@@ -30,11 +43,11 @@
             <p class="hero-top-heading">Revolutionizing Engagement  in Education and<br>Professional Growth.</p>
             <p class="hero-top-subheading" >Empowering learning, collaboration, and career growth for students and professionals.</p>
             <div class="hero-top-buttons">
-                <div  class="hero-top-btn hero-top-btn1">
+                <div  class="hero-top-btn1">
                     <a href="#">Get Early Acecess</a>
                     <img src="./assets/icons/Arrow-white.png" alt="">
                 </div>
-                <div  class="hero-top-btn hero-top-btn2">
+                <div  class="hero-top-btn2">
                     <a href="#">Stay Updated</a>
                     <img src="./assets/icons/Arrow-blue.png" alt="">
                 </div>
@@ -63,11 +76,11 @@
                     <p class="hero-b-box3-box1-sub" >Engage with peers, mentors, and industry professionals to foster collaboration and explore new career opportunities. Build a network that supports your aspirations and drives your success.</p>
                 </div>
                 <div class="hero-b-box3-box3">
-                    <div class="hero-top-btn hero-top-btn1">
+                    <div class="hero-box3-box-3-btn hero-box3-box-3-btn1">
                         <a  href="#">Read Our Latest Blog</a>
                         <img src="./assets/icons/Arrow-white.png" alt="">
                     </div>
-                    <div class="hero-top-btn hero-top-btn2">
+                    <div class="hero-box3-box-3-btn hero-box3-box-3-btn2">
                         <a href="#">Share Your Insights in a Quick Survey</a>
                         <img src="./assets/icons/Arrow-blue.png" alt="">
                     </div>
@@ -76,7 +89,7 @@
         </div>
     </section>
     <section id="quote" class="quote" >
-        <p class="quote-head" >Our vision</p>
+        <p class="quote-head" >Our Vision</p>
         <p class="quote-para" >“To transform the future of education by providing intuitive, innovative, and scalable technology solutions that empower educational institutions to create more personalized, engaging, and efficient learning environments globally.”</p>
     </section>
     <section id="map" class="map" >
@@ -142,27 +155,27 @@
         <div class="contact-s-1">
             <p>Partner with Us for Growth</p>
             <div  class="contact-s-1-btn">
-                <div style="width: 200px;" class="hero-top-btn hero-top-btn1 contact-s-1-btn">
+                <div  class="hero-top-btn hero-top-btn1 contact-s-1-btn1">
                     <a  href="#">Wish to Invest in Change?</a>
                     <img src="./assets/icons/Arrow-white.png" alt="">
                 </div>
-                <div style="width: 200px;" class="hero-top-btn hero-top-btn2 contact-s-1-btn">
+                <div class="hero-top-btn hero-top-btn2 contact-s-1-btn2">
                     <a href="#">Eager to Know More?</a>
                     <img src="./assets/icons/Arrow-blue.png" alt="">
                 </div>
             </div>
         </div>
         <div class="contact-s-2">
-            <p>Get in touch, <br> We'd Love to Hear From You</p>
-            <div class="contact-s-2-details-top">
-                <input type="text" id="name" placeholder="Your name">
-                <input type="text" id="email" placeholder="Your name">
-                <input type="text" id="phone" placeholder="Your name">
+            <p  >Get in touch, <br> We'd Love to Hear From You</p>
+            <div  class="contact-s-2-details-top">
+                <input type="text" id="msg-name" placeholder="Name">
+                <input type="text" id="msg-email" placeholder="Email">
+                <input type="text" id="msg-phone" placeholder="Phone Number">
             </div>
-            <textarea class="contact-s-2-msg" rows="5" placeholder="Message"></textarea>
-            <div class="contact-s-2-submit">
-                <button>Leave us a message</button>
-                <img src="./assets/icons/Arrow 3.png" alt="">
+            <textarea  id="msg-msg" class="contact-s-2-msg" rows="5" placeholder="Message"></textarea>
+            <div id="submit-overlay" class="contact-s-2-submit">
+                <button id="submit" >Leave us a message</button>
+                <div class="contact-s-2-submit-icon"></div>
             </div>
         </div>
         <div class="contact-s-3">
@@ -188,6 +201,86 @@
     var totalheight = height1+height2+height3;
     back_line.style.top = totalheight + 220 + "px"
     back_line.style.height = map-100 + 'px'
+
+    document.getElementById('navbar-menu').addEventListener('click',function () {
+        var navbar_content = document.getElementById('navbar-content')
+        var navbar_button_open = document.getElementById('navbar-open')
+        var navbar_button_close = document.getElementById('navbar-close')
+        if(navbar_content.offsetLeft < 400){
+            navbar_content.style.right = '-50vw'
+            navbar_button_open.style.opacity = 1
+            navbar_button_close.style.opacity = 0
+        }else{
+            navbar_content.style.right = '0vw'
+            navbar_button_open.style.opacity = 0
+            navbar_button_close.style.opacity = 1
+        }
+        
+    } )
     
 </script>
+<script type="module">
+  
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    import { getFirestore, collection, query, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+  
+      apiKey: "AIzaSyBVdTECNPVWilgl004_BEoIPeNRZy7ue2E",
+  
+      authDomain: "reciprokel.firebaseapp.com",
+  
+      projectId: "reciprokel",
+  
+      storageBucket: "reciprokel.firebasestorage.app",
+  
+      messagingSenderId: "229742685890",
+  
+      appId: "1:229742685890:web:0d34df8f79bee78019d55b",
+  
+      measurementId: "G-Y3W32QD1Y2"
+  
+    };
+  
+  
+    const app = initializeApp(firebaseConfig);
+  
+    const analytics = getAnalytics(app);
+
+    const db = getFirestore();
+
+    
+
+    document.getElementById("submit").addEventListener("click", async function() {
+
+        var input_name = document.getElementById("msg-name").value
+        var input_email = document.getElementById("msg-email").value
+        var input_phone = document.getElementById("msg-phone").value
+        var input_Msg = document.getElementById("msg-msg").value
+        var submit = document.getElementById("submit-overlay")
+        console.log(input_name,input_email,input_Msg,input_phone);
+        if(!input_email || !input_Msg){
+        }else{
+            submit.style.opacity = 0.2;
+            try {
+                const docRef = await addDoc(collection(db, "Msg"), {
+                    name: input_name,
+                    email: input_email,
+                    phone: input_phone,
+                    msg:input_Msg
+                });
+                console.log("Document written with ID: ", docRef.id);
+                submit.style.opacity = 1;
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
+        }
+
+            
+    });
+        
+  
+  </script>
 </html>

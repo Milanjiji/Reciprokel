@@ -19,6 +19,12 @@ header{
     margin-left: 51px;
     margin-right: 51px;
 }
+.navbar-menu{
+    display: none;
+}
+.navbar-content{
+    display: none;
+}
 .header-left{
     display: flex;
     justify-content: center;
@@ -40,6 +46,7 @@ header{
     list-style: none;
     margin-right: 30px;
     font-size: 14px;
+    font-weight: 500;
 }
 .header-center ul li a{
     text-decoration: none;
@@ -65,6 +72,7 @@ header{
 .hero-top-heading{
     font-size: 56px;
     font-weight: 400;
+    letter-spacing: -0.05em;
 }
 .hero-top-subheading{
     margin-top: 9px;
@@ -76,40 +84,54 @@ header{
     justify-content: center;
     align-items: center;
 }
-.hero-top-btn{
+
+.hero-top-btn img{
+    width: 14px;
+    height: 14px;
+}
+
+.hero-top-btn1 a{
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero-top-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero-top-btn1{
+    width: 200px;
+    background-color: #2667FF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 10px;
     border-radius: 30px;
-    width: 200px;
+    transition: 0.3s;
 }
-.hero-top-btn a{
-    text-decoration: none;
-    font-size: 14px;
-}
-.hero-top-btn img{
-    width: 14px;
-    height: 14px;
-}
-.hero-top-btn1{
-    background-color: #2667FF;
-}
-.hero-top-btn1 a{
-    color: white;
-    margin-right: 10px;
-}
+
 .hero-top-btn2{
+    width: 200px;
     background-color: white;
     border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
-.hero-top-btn2 a{
-    color: #2667FF;
-    margin-right: 10px;
-}
+
 .hero-bottom{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -199,20 +221,45 @@ header{
     display: flex;
     flex-direction: row;
 }
-.hero-top-btn{
-    width: 50%;
+.hero-box3-box-3-btn1{
+    width: 10.5vw;
+    background-color: #2667FF;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
 }
-.hero-top-btn1{
-    width: 200px;
-}
-.hero-top-btn2{
-    width: 200px;
-}
-.hero-top-btn1 a{
+.hero-box3-box-3-btn1 a{
+    color: white;
+    margin-right: 10px;
     font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
 }
-.hero-top-btn2 a{
+.hero-box3-box-3-btn2{
+    width: 10.5vw;
+    background-color: white;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.hero-box3-box-3-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
     font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
 }
 .quote{
     margin: 40px 40px;
@@ -220,6 +267,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: -0.05em;
 }
 .quote-head{
     font-weight: 200;
@@ -237,6 +285,7 @@ header{
 .map{
     font-size: 20px;
     font-weight: 200;
+    letter-spacing: -0.05em;
 }
 .back-map-line{
     position:absolute;
@@ -340,21 +389,59 @@ header{
     align-items: center;
 }
 .contact-s-1{
-    padding: 40px;
+    padding: 00px;
 }
 .contact-s-1 p{
     text-align: center;
     margin-bottom: 20px;
 }
 .contact-s-1-btn{
-    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-.contact-s-1-btn{
+.contact-s-1-btn1{
+    width: 15vw;
+    background-color: #2667FF;
+    border: 1px #2667FF solid;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
+.contact-s-1-btn1 a{
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.contact-s-1-btn2{
+    width: 15vw;
+    background-color: white;
+    border: 1px #2667FF solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.contact-s-1-btn2 a{
+    color: #2667FF;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .contact-s-2{
     width: 95vw;
     margin-top: 50px;
@@ -401,6 +488,7 @@ header{
     align-items: center;
     margin-top: 50px;
     border-radius: 20px;
+    transition: 0.3s;
 }
 .contact-s-2-submit button{
     background-color: rgba(255, 255, 255, 0);
@@ -408,6 +496,21 @@ header{
     border: none;
     margin-right:20px ;
 }
+.contact-s-2-submit-icon{
+    width: 30px;
+    height: 10px;
+    background-image: url('./assets/icons/Arrow\ 3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contact-s-2-submit:hover{
+    background-color: white;
+    border: 1px #2667FF solid;
+}
+.contact-s-2-submit:hover button{
+    color: #2667FF;
+}
+
 .contact-s-3{
     margin-top: 100px;
     display: flex;
@@ -431,4 +534,5 @@ header{
 .contact-s-4 p{
     font-weight: 200;
     text-align: center;
+    font-size: 14px;
 }
