@@ -45,10 +45,8 @@
             <p class="hero-top-heading">Revolutionizing Engagement  in Education and<br>Professional Growth.</p>
             <p class="hero-top-subheading" >Empowering learning, collaboration, and career growth for students and professionals.</p>
             <div class="hero-top-buttons">
-                <div onclick="window.location='./commingSoon.html'" class="hero-top-btn1">
-                    <a href="./commingSoon.html">Get Early Acecess</a>
-                    <img src="./assets/icons/Arrow-white.png" alt="">
-                </div>
+                
+                <a class="hero-top-btn1" href="./commingSoon.html">Get Early Acecess <img src="./assets/icons/Arrow-white.png" alt=""></a>
                 <div onclick="window.location='./commingSoon.html'" class="hero-top-btn2">
                     <a href="./commingSoon.html">Stay Updated</a>
                     <img src="./assets/icons/Arrow-blue.png" alt="">
@@ -197,6 +195,17 @@
 </body>
 
 <script>
+
+    const link = document.querySelector('.hero-top-btn1');
+    const img = link.querySelector('img');
+
+    link.addEventListener('mouseenter', () => {
+        img.src = './assets/icons/Arrow-blue.png'; // Change to the new image source
+    });
+
+    link.addEventListener('mouseleave', () => {
+        img.src = './assets/icons/Arrow-white.png'; // Change back to the original image source
+    });
     var height1 = document.getElementById('header').offsetHeight
     var height2 = document.getElementById('hero').offsetHeight;
     var height3 = document.getElementById('quote').offsetHeight;
