@@ -216,15 +216,14 @@ header{
 .hero-b-box3-box1{
     background-color: #F4F4F6;
     border-radius: 20px;
-    padding:30px 35px;
-    height: 30%;
+    padding:18px 35px;
     background-image: url('./assets/img/Capa\ 2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .hero-b-box3-box2{
     background-color: #F4F4F6;
-    padding: 30px 35px;
+    padding: 18px 35px;
     border-radius: 20px;
     background-image: url('./assets/img/Union.png');
     background-repeat: no-repeat;
