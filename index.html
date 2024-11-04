@@ -155,10 +155,7 @@
         <div data-aos="fade-up" class="contact-s-1">
             <p>Partner with Us for Growth</p>
             <div  class="contact-s-1-btn">
-                <div onclick="window.location='./commingSoon.html'" class="hero-top-btn hero-top-btn1 contact-s-1-btn1">
-                    <a  href="./commingSoon.html">Wish to Invest in Change?</a>
-                    <img src="./assets/icons/Arrow-white.png" alt="">
-                </div>
+                <a class="hero-top-btn hero-top-btn1 contact-s-1-btn1" href="./commingSoon.html">Wish to Invest in Change?<img src="./assets/icons/Arrow-white.png" alt=""></a>
                 <div onclick="window.location='./commingSoon.html'" class="hero-top-btn hero-top-btn2 contact-s-1-btn2">
                     <a href="./commingSoon.html">Eager to Know More?</a>
                     <img src="./assets/icons/Arrow-blue.png" alt="">
@@ -199,6 +196,9 @@
     const link = document.querySelector('.hero-top-btn1');
     const img = link.querySelector('img');
 
+    const link2 = document.querySelector('.contact-s-1-btn1');
+    const img2 = link2.querySelector('img');
+
     link.addEventListener('mouseenter', () => {
         img.src = './assets/icons/Arrow-blue.png'; // Change to the new image source
     });
@@ -206,6 +206,15 @@
     link.addEventListener('mouseleave', () => {
         img.src = './assets/icons/Arrow-white.png'; // Change back to the original image source
     });
+
+    link2.addEventListener('mouseenter', () => {
+        img2.src = './assets/icons/Arrow-blue.png'; // Change to the new image source
+    });
+
+    link2.addEventListener('mouseleave', () => {
+        img2.src = './assets/icons/Arrow-white.png'; // Change back to the original image source
+    });
+
     var height1 = document.getElementById('header').offsetHeight
     var height2 = document.getElementById('hero').offsetHeight;
     var height3 = document.getElementById('quote').offsetHeight;
