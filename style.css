@@ -272,7 +272,7 @@ header{
 .hero-box3-box-3-btn2{
     width: 10.5vw;
     background-color: white;
-    border: 1px #2667FF solid;
+    border: 1px white solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +281,11 @@ header{
     padding-right: 30px;
     border-radius: 20px;
     margin-left: 10px;
+    transition: 0.2s;
     cursor: pointer;
+}
+.hero-box3-box-3-btn2:hover{
+    border: 1px #2667FF solid;
 }
 .hero-box3-box-3-btn2 a{
     color: #2667FF;
@@ -344,7 +348,7 @@ header{
     max-width: 40vw;
     border-radius: 20px;
     padding: 20px 30px;
-    border:1px #2667FF solid;
+    /* border:1px #2667FF solid; */
     margin-top: -10px;
     margin-bottom: 50px;
 }
@@ -354,7 +358,7 @@ header{
 }
 .map-box-content-head{
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .map-box-1{
     display: flex;
