@@ -105,14 +105,6 @@ header{
     height: 14px;
 }
 
-.hero-top-btn1 a{
-    color: white;
-    margin-right: 10px;
-    font-size: 12px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
 .hero-top-btn2 a{
     color: #2667FF;
     margin-right: 10px;
@@ -132,12 +124,23 @@ header{
     border-radius: 30px;
     transition: 0.3s;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero-top-btn1 img{
+    margin-left: 10px;
+}
+.hero-top-btn1:hover{
+    color: #2667FF;
+    background-color: white;
+    border: 1px #2667FF solid;
 }
 
 .hero-top-btn2{
     width: 200px;
     background-color: white;
-    border: 1px #2667FF solid;
+    border: 1px white solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,9 +149,12 @@ header{
     padding-right: 30px;
     border-radius: 30px;
     margin-left: 10px;
+    transition: 0.2s;
     cursor: pointer;
 }
-
+.hero-top-btn2:hover{
+    border: 1px #2667FF solid;
+}
 .hero-bottom{
     display: grid;
     grid-template-columns: repeat(3,1fr);
