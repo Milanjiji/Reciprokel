@@ -76,10 +76,10 @@
                     <p class="hero-b-box3-box1-sub" >Engage with peers, mentors, and industry professionals to foster collaboration and explore new career opportunities. Build a network that supports your aspirations and drives your success.</p>
                 </div>
                 <div class="hero-b-box3-box3">
-                    <div onclick="window.location='./commingSoon.html'" class="hero-box3-box-3-btn hero-box3-box-3-btn1">
-                        <a  href="./commingSoon.html">Read Our Latest Blog</a>
-                        <img src="./assets/icons/Arrow-white.png" alt="">
-                    </div>
+
+
+                    <a class="hero-box3-box-3-btn hero-box3-box-3-btn1" href="./commingSoon.html">Read Our Latest Blog<img src="./assets/icons/Arrow-white.png" alt=""></a>
+              
                     <div onclick="window.location='./commingSoon.html'" class="hero-box3-box-3-btn hero-box3-box-3-btn2">
                         <a href="./commingSoon.html">Share Your Insights in a Quick Survey</a>
                         <img src="./assets/icons/Arrow-blue.png" alt="">
@@ -172,7 +172,7 @@
             <textarea  id="msg-msg" class="contact-s-2-msg" rows="3" placeholder="Message"></textarea>
             <div id="submit-overlay" class="contact-s-2-submit">
                 <button id="submit" >Leave us a message</button>
-                <div class="contact-s-2-submit-icon"></div>
+                <img src="./assets/icons/Arrow 3.png" alt="">
             </div>
         </div>
         <div data-aos="fade-up" class="contact-s-3">
@@ -199,6 +199,14 @@
     const link2 = document.querySelector('.contact-s-1-btn1');
     const img2 = link2.querySelector('img');
 
+    const link3 = document.querySelector('.hero-box3-box-3-btn1');
+    const img3 = link3.querySelector('img');
+
+    const link4 = document.querySelector('.contact-s-2-submit');
+    const img4 = link4.querySelector('img');
+
+    // contact-s-2-submit
+
     link.addEventListener('mouseenter', () => {
         img.src = './assets/icons/Arrow-blue.png'; // Change to the new image source
     });
@@ -213,6 +221,25 @@
 
     link2.addEventListener('mouseleave', () => {
         img2.src = './assets/icons/Arrow-white.png'; // Change back to the original image source
+    });
+    link3.addEventListener('mouseenter', () => {
+        img3.src = './assets/icons/Arrow-blue.png'; // Change to the new image source
+    });
+
+    link3.addEventListener('mouseleave', () => {
+        img3.src = './assets/icons/Arrow-white.png'; // Change back to the original image source
+    });
+
+    link4.addEventListener('mouseenter', () => {
+        img4.src = './assets/icons/right-arrow.png';
+        img4.style.width = '28px';  // Change to desired width
+        img4.style.height = '22px';
+    });
+
+    link4.addEventListener('mouseleave', () => {
+        img4.src = './assets/icons/Arrow 3.png'; 
+        img4.style.width = '';  // Change to desired width
+        img4.style.height = '';
     });
 
     var height1 = document.getElementById('header').offsetHeight

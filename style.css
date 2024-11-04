@@ -69,10 +69,12 @@ header{
 }
 .header-right p{
     font-size: 14px;
+    font-weight: 500;
 }
 .header-right p a{
     color: black;
     text-decoration: none;
+    font-weight: 500;
 }
 .hero{
     margin-top: 50px;
@@ -256,14 +258,16 @@ header{
     padding-right: 30px;
     border-radius: 20px;
     margin-left: 10px;
-    cursor: pointer;
-}
-.hero-box3-box-3-btn1 a{
-    color: white;
-    margin-right: 10px;
-    font-size: 12px;
     text-decoration: none;
+    color: white;
     font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.hero-box3-box-3-btn1:hover{
+    color: #2667FF;
+    background-color: white;
+    border: 1px #2667FF solid;
 }
 .hero-box3-box-3-btn2{
     width: 10.5vw;
@@ -425,7 +429,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 30px;
 }
 .contact-s-1-btn1{
     width: 15vw;
@@ -526,6 +530,8 @@ header{
     margin-top: 50px;
     border-radius: 20px;
     transition: 0.3s;
+    height: 20px;
+    width: 200px;
 }
 .contact-s-2-submit button{
     background-color: rgba(255, 255, 255, 0);
