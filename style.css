@@ -353,6 +353,11 @@ header{
     margin-top: -10px;
     margin-bottom: 50px;
 }
+.map-box-content-para{
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0em;
+}
 .map-box-content ul{
     margin-left: 20px;
     margin-top: 10px;
