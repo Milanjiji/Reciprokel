@@ -322,6 +322,10 @@
                 });
                 console.log("Document written with ID: ", docRef.id);
                 submit.style.opacity = 1;
+                document.getElementById("msg-name").value = '';
+                document.getElementById("msg-email").value = '';
+                document.getElementById("msg-phone").value = '';
+                document.getElementById("msg-msg").value = '';
                 alert.style.right = '50px'
                 alert.innerText = 'Message sent successfully'
                 setTimeout(()=>{
